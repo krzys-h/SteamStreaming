@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="XSteamBox.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XSteamBox"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" Grid.Column="0" PlaceholderText="IP address" Text="127.0.0.1" Margin="3" Name="InputIP" />
+        <TextBlock Grid.Row="0" Grid.Column="1" Text=":" Margin="3" VerticalAlignment="Center" />
+        <TextBox Grid.Row="0" Grid.Column="2" PlaceholderText="Port" Text="27036" Margin="3" Name="InputPort" />
+        <Button Grid.Row="0" Grid.Column="3" Content="Connect" Margin="3" Name="ButtonConnect" Click="ButtonConnect_Click" />
+        <TextBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" PlaceholderText="PSK" Text="26998d4257e5faaaefdc4e587a934997484945bf57ea4bb9b609c433e80d60c4" Margin="3" Name="InputPSK" />
+        <Viewbox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" StretchDirection="DownOnly">
+            <Border BorderBrush="Red" BorderThickness="1">
+                <Image Name="VideoFeed"/>
+            </Border>
+        </Viewbox>
+    </Grid>
+</Page>

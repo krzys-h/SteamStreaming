@@ -1,0 +1,2 @@
+https://github.com/simonferquel/yuvrenderer/tree/master/src/YuvRenderer/YuvRenderer.Shared
+https://github.com/OpenXbox/xbox-smartglass-csharp

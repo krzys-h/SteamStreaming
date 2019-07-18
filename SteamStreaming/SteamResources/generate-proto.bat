@@ -1,0 +1,1 @@
+..\..\..\..\protobuf-csharp-proto2\cmake\build\install\bin\protoc.exe --csharp_out=SteamProtobuf -IProtobufs\steam steammessages_remoteclient.proto steammessages_remoteclient_discovery.proto steammessages_base.proto stream.proto
